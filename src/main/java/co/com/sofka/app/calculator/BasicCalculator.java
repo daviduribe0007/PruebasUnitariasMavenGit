@@ -22,7 +22,7 @@ public class BasicCalculator {
         return number1 * number2;
     }
 
-    public double division(Long number1, Long number2) {
+    public double division(double number1, double number2) {
         logger.info("Summing {} / {}", number1, number2);
         try {
             return number1 / number2;
