@@ -4,11 +4,22 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BasicCalculatorTest {
+public class BasicCalculatorTest {
+
+    private final BasicCalculator basicCalculator = new BasicCalculator();
 
     @Test
-    void sum() {
+    public void sum() {
+        // Arrange
+        Long number1 = 1L;
+        Long number2 = 1L;
+
+        // Act
+        basicCalculator.sum(number1, number2);
     }
+
+
+
 
     @Test
     void subtraction() {
