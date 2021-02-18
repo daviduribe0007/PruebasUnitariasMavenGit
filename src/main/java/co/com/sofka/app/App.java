@@ -10,28 +10,27 @@ import java.io.InputStreamReader;
 
 /**
  * Hello world!
- *
  */
 public class App {
 
-    private static final Logger logger = LoggerFactory.getLogger( App.class );
+    private static final Logger logger = LoggerFactory.getLogger(App.class);
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader bufferedReader = new BufferedReader( new InputStreamReader( System.in ) );
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println( "Enter number 1: " );
+        System.out.println("Enter number 1: ");
         String textNumber1 = bufferedReader.readLine();
 
-        System.out.println( "Enter number 2: " );
+        System.out.println("Enter number 2: ");
         String textNumber2 = bufferedReader.readLine();
 
-        Long number1 = Long.valueOf( textNumber1 );
-        Long number2 = Long.valueOf( textNumber2 );
+        Long number1 = Long.valueOf(textNumber1);
+        Long number2 = Long.valueOf(textNumber2);
 
         BasicCalculator calculator = new BasicCalculator();
-        Long result = calculator.sum( number1, number2 );
+        Long result = calculator.sum(number1, number2);
 
-        System.out.println( number1 + " + " + number2 + " = " + result );
+        System.out.println(number1 + " + " + number2 + " = " + result);
     }
 }
